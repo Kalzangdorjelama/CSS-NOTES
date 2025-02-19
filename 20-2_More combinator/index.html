@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Descendant Selector: Targets <p> inside any <div> */
+        /* div p {
+            color: green; 
+        }  */
+
+        /* Child Selector: Targets only direct child <p> of <div> */
+        /* div > p {
+            font-weight: bold; 
+        } */
+
+        /* Adjacent Sibling Selector: Targets <p> directly after a <div> */
+        div+p {
+            color: aquamarine;
+        }
+
+        /* General Sibling Selector: Targets all <p> after a <div>, no matter how far */
+        /* div~p {
+            color: blueviolet;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Inside the div</h2>
+        <p>This is a direct child paragraph of div (bold).</p> <!-- Child selector applies here -->
+        <span>
+            <p>This is a descendant of div but not a direct child (green).</p> <!-- Descendant selector applies -->
+        </span>
+    </div>
+
+    <span>solti</span>
+
+    <p>This is the adjacent sibling of the div (aquamarine).</p> <!-- Adjacent sibling selector applies here -->
+
+    <p>This is a general sibling after the div (blueviolet).</p> <!-- General sibling selector applies here -->
+</body>
+
+</html>

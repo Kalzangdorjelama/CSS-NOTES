@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        /* A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables. */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* globle variable */
+        :root {
+            --color: rgb(223, 29, 62);
+            --seccolor: orange;
+            --defop: 0.6;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul>li {
+            border: 3px solid var(--seccolor);
+            list-style: none;
+            margin: 2px 3px 3px 4px;
+            padding: 3px;
+        }
+
+        .nav {
+            /* local variable */
+            --color: rgb(42, 124, 165);
+            background-color: var(--color);
+        }
+
+        .content>p {
+            opacity: var(--defop);
+            --color: green;
+            background-color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="content">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed libero modi, provident at possimus, voluptates
+            enim delectus esse culpa deserunt itaque aspernatur ipsam saepe quas. Nesciunt asperiores, nam rem, sint,
+            repellat vel dolores enim id amet nostrum minima consectetur corrupti!
+        </p>
+    </div>
+</body>
+
+</html>

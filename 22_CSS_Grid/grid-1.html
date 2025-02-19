@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 90px 90px 90px;
+            grid-template-rows: 90px 90px 90px;
+        }
+
+        .item {
+            /* height: 50px;
+            width: 70px; */
+            border: 2px solid green;
+        }
+
+        .item-4 {
+            /* 1 row se le ke 2 row tak */
+            grid-row: 1/2;
+
+            /* 1 column se le ke 4 column tak */
+            grid-column: 1/4;
+        }
+
+        /* .item-1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+
+</html>

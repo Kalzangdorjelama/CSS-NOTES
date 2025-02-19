@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Width Example</title>
+    <style>
+        .container {
+            width: 500px;
+            /* Fixed width container */
+            border: 2px solid black;
+        }
+
+        img {
+            max-width: 100%;
+            /* Image won't be wider than its container */
+            max-height: 100%;
+            height: auto;
+            /* Maintain aspect ratio */
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img.png" alt="Sample Image">
+        <p>This image will resize to fit within its container, but won’t exceed the container’s width.</p>
+    </div>
+</body>
+
+</html>

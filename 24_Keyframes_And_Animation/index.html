@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: pink;
+        }
+
+        .box {
+            background-color: green;
+            height: 150px;
+            width: 150px;
+            position: relative;
+
+            /* animation-name: kalzang1; */
+            animation-name: kalzang2;
+
+            animation-duration: 5s;
+
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+
+            /* 2s roke xa ani animation hunxa */
+            /* animation-delay: 2s; */
+
+            animation-iteration-count: infinite;
+            
+            /* animation-direction: reverse; */
+        
+
+            /* fill garxa 200px to 500px */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+
+
+
+            /* shorthand syntax of animation */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode; */
+
+        }
+
+        @keyframes kalzang1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+
+        }
+
+        @keyframes kalzang2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+
+</html>

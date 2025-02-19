@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box:first-child::first-line{
+            color: green;
+        } */
+
+        /* first bata first i.e ronaldo no 1  */
+        /* .box:nth-child(1){
+            background-color: aqua;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+
+        /* A number which is not divisible by “2” is called an odd number. */
+        /* .box:nth-child(odd){
+            background-color: aqua;
+        } */
+
+        /* last bata count hunxa i.e last bata first hunu haha i.e :nth-last-child(1) selects the last child element of its parent. */
+        /* .box:nth-last-child(1) {
+            background-color: green;
+            color: yellow;
+        } */
+
+        /* .boxes::before{
+            content: "is this is real";
+        } */
+
+        /* .boxes::after{
+            content: "unreal beauty";
+            color: blueviolet;
+        } */
+
+        /* select gareko part ma background black or color text ko aqua hunxa */
+        /* ::selection {
+            background-color: black;
+            color: aqua;
+        } */
+
+        /* .box::first-letter{
+            color: red;
+            font-size: 47px;
+        } */
+
+        /* input::placeholder{
+            color: blue;
+            font-size: 15px;
+        } */
+
+        /* p,a,[data-color="primary"]{
+            padding-top: 47px;
+        } */
+
+        /* we can add .box in above multiple selector */
+        /* p,a,.box{
+            padding-top: 47px;
+        } */
+
+        /* .boxes ma parne sabai ko text color red */
+        .boxes, * {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus alias quod corporis excepturi
+            maiores quas atque porro non architecto fuga, libero laborum facilis, voluptate recusandae commodi enim aut
+            qui temporibus doloremque? Nesciunt, autem quisquam quia aut illo ratione?
+        </div><br>
+        <div class="box">hi</div><br>
+        <div class="box">loki</div><br>
+        <input type="text" placeholder="Enter your name" style="height: 30px; "><br><br>
+        <div class="box">Hello Programmer</div>
+
+    </div>
+</body>
+
+</html>

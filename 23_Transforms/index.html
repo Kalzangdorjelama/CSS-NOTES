@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            height: 80vh;
+            width: 100vw;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+
+
+            
+
+            /* move box position */
+            /* transform: translateX(120px); */
+            /* transform: translateY(90px); */
+            /* transform: translate(20px,50px); */
+
+            /* change box in size */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+
+            /* x ra y direction ma hunxa */
+            /* transform: scale(2); */
+
+
+            /* a slant i.e chadke position */
+            /* transform:skew(10deg) ; */
+        }
+
+        .box:hover{
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(60deg); */
+            transform: rotateZ(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+
+</html>

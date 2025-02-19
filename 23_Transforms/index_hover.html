@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            height: 80vh;
+            width: 100vw;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            transform: rotate(360deg);
+
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+
+            /* transform: translateX(120px); */
+            /* transform: translateY(90px); */
+
+            /* by default y direction ma translate hunxa if we write below */
+            /* transform: translate(20px);   */
+
+            /* transform: translate(20px,50px); */
+
+            /* transform: skew(60deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+
+</html>
